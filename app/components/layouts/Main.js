@@ -12,7 +12,7 @@ class Main extends React.Component {
         return (
             <div id="wrapper">
                 <Progress />
-                <Navigation location={this.props.location}/>
+                <Navigation location={this.props.location} />
 
                 <div id="page-wrapper" className={wrapperClass}>
 
@@ -32,7 +32,7 @@ class Main extends React.Component {
     componentDidMount() {
 
         // Run correctHeight function on load and resize window event
-        $(window).bind("load resize", function() {
+        $(window).bind("load resize", function () {
             correctHeight();
             detectBody();
         });

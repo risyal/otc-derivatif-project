@@ -7,8 +7,8 @@ class ClearingView extends Component {
         return (
             <div>
                 <HeaderPage
-                    name="Transaction - Trade Inquery"
-                    namePage="Trade Inquery"
+                    name="Transaction - Clearing Calculation"
+                    namePage="Clearing Calculation"
                     parentPage="Transaction"
                 ></HeaderPage>
                 <div className="wrapper wrapper-content animated fadeInRight content">

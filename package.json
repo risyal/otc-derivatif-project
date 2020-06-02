@@ -1,9 +1,13 @@
 {
   "name": "inspinia-reactjs",
   "version": "2.7.0",
+  "homepage": "https://risyal.github.io/otc-derivatif-project/",
   "scripts": {
     "start": "node server.js",
-    "build": "BABEL_ENV=production ./node_modules/.bin/webpack --config webpack.config.production.js"
+    "predeploy": "npm run build",
+    "build": "./node_modules/.bin/webpack --config webpack.config.production.js  --mode production",
+    "deploy": "gh-pages -d dist",
+    "publish-demo": "npm run build && npm run deploy"
   },
   "keywords": [
     "inspinia",

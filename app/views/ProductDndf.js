@@ -12,8 +12,8 @@ const ProductDndf = (props) => {
     return (
         <div>
             <HeaderPage
-                name="Administration - Report"
-                namePage="Report"
+                name="Administration - Product"
+                namePage="Product"
                 parentPage="Administration"
             ></HeaderPage>
             <div className="wrapper wrapper-content animated fadeInRight content">
