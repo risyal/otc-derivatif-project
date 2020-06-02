@@ -46,11 +46,8 @@ const NovationReport = (props) => {
 
                             </div>
                             <div className="ibox-content">
-                                <br />
-                                <br />
-                                <br />
-                                <br />
-                                <br />
+                              
+                               
                                 {/*  <div className="col-sm-5 m-b-xs">
                                     <button type="button" className="btn btn-white btn-sm" >
                                         <a to="/fake"> Reject</a>
@@ -69,6 +66,93 @@ const NovationReport = (props) => {
                                         </button>
                                     </div>
                                 </div> */}
+                                <div className = "table-responsive">
+                                    <table className="table  table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col" className="text-center" >Product</th>
+                                                <th scope="col" className="text-center">Original Trade ID</th>
+                                                <th scope="col" className="text-center">Novated Trade ID</th>
+                                                <th scope="col" className="text-center">Clearing Member ID</th>
+                                                <th scope="col" className="text-center">Clearing Member POsition</th>
+                                                <th scope="col" className="text-center">KPEI ID</th>
+                                                <th scope="col" className="text-center">KPEI POsition</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                    <td>IRS</td>
+                                                    <td>AB1234567</td>
+                                                    <td>AD2345666</td>
+                                                    <td>MS234433</td>
+                                                    <td>Fixed Rate Payer</td>
+                                                    <td>KP344569</td>
+                                                    <td>Fixed Rate Receiver</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                              
+                                                    <td>IRS</td>
+                                                    <td>AB1234567</td>
+                                                    <td>AD2345666</td>
+                                                    <td>JP098871</td>
+                                                    <td>Fixed Rate Receiver</td>
+                                                    <td>KP344569</td>
+                                                    <td>Fixed Rate Payer</td>
+                                             
+                                            </tr>
+                                            <tr>
+                                             
+                                                    <td>IRS</td>
+                                                    <td>AB1234566</td>
+                                                    <td>DE4325667</td>
+                                                    <td>CS876654</td>
+                                                    <td>Fixed Rate Receiver</td>
+                                                    <td>KP344569</td>
+                                                    <td>Fixed Rate Payer</td>
+                               
+                                            </tr>
+                                            <tr>
+                                           
+                                                    <td>IRS</td>
+                                                    <td>AB1234566</td>
+                                                    <td>DE4325667</td>
+                                                    <td>C1456533</td>
+                                                    <td>Fixed Rate Payer</td>
+                                                    <td>KP344569</td>
+                                                    <td>Fixed Rate Receiver</td>
+                                          
+                                            </tr>
+                                            <tr>
+                                            
+                                                    <td>DNDF</td>
+                                                    <td>AB3456789</td>
+                                                    <td>BC6543210</td>
+                                                    <td>KW98765</td>
+                                                    <td>Buyer</td>
+                                                    <td>KP344569</td>
+                                                    <td>Seller</td>
+                                               
+                                            </tr>
+                                            <tr>
+                                                 
+                                                    <td>DNDF</td>
+                                                    <td>AB3456789</td>
+                                                    <td>BC6543210</td>
+                                                    <td>YR135791</td>
+                                                    <td>Seller</td>
+                                                    <td>KP344569</td>
+                                                    <td>Buyer</td>
+                                              
+                                            </tr>
+
+                                        </tbody>
+
+
+                                    </table>
+
+                                </div>
 
                                 <br />
                                 <br />
