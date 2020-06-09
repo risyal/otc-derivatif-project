@@ -47,7 +47,7 @@ class Home extends Component {
                                             <i className="fa fa-file-text"></i>
                                         </div>
                                         <div>
-                                            <h5>Key File</h5>
+                                            <span>Key File</span>
                                         </div>
                                         <div></div>
                                         <div className="div choose-file">
