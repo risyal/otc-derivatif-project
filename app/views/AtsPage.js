@@ -130,9 +130,9 @@ class AtsPage extends Component {
                                             <select id="inputState" className="form-control"
                                                 onChange={(e) => handleSearch(e.target.value)}>
                                                 <option selected>Pilih Product </option>
-                                                <option value="irs">IRS </option>
-                                                <option value="ois">OIS </option>
-                                                <option value="dndf">DNDF </option>
+                                                <option value="irs">Interest Rate Swap (IRS) </option>
+                                                <option value="ois">Overnight Index Swap (OIS) </option>
+                                                <option value="dndf">Domestic Non-Deliverable Forward (DNDF) </option>
                                             </select>
 
                                         </div>
