@@ -46,7 +46,7 @@ class Navigation extends Component {
                     </li> */}
                     <li className={this.activeRoute("/ats")}>
                         <Link to="/">
-                            <i className="fa fa-balance-scale" aria-hidden="true"></i> 
+                            <i className="fa fa-tasks" aria-hidden="true"></i>
                             <span className="nav-label">ATS</span>
                             <span className="fa arrow"></span>
                         </Link>
