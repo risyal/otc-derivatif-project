@@ -20,7 +20,7 @@ class AtsPage extends Component {
                                         <div className="form-group col-md-5 ">
                                             <div className="form-group row">
                                                 <div className="form-group col-md-3">
-                                                    <label for="inputUser1">User</label>
+                                                    <label for="inputUser1" title="Tambahkan User">User</label>
                                                 </div>
 
                                                 <div className="col-sm-6">
@@ -37,7 +37,7 @@ class AtsPage extends Component {
                                                 <label for="inputProduct"> : </label>
                                             </div> */}
                                                 <div className="col-sm-5">
-                                                    <select id="inputState" className="form-control">
+                                                    <select id="inputState" className="form-control" title="Pilih Salah satu Product Dibawah ini">
                                                         <option selected>...</option>
                                                         <option>IRS</option>
                                                         <option>OIS</option>
@@ -135,7 +135,7 @@ class AtsPage extends Component {
                                             <span >
 
                                                 Process
-                            </span>
+                                            </span>
 
 
                                         </button>

@@ -3,6 +3,8 @@ import { Link, Location } from 'react-router';
 import HeaderPage from '../components/common/HeaderPage';
 
 
+
+
 class AtsInquiryTrade extends Component {
 
     render() {
@@ -40,10 +42,10 @@ class AtsInquiryTrade extends Component {
                                     </div>
 
                                     <div className="table-responsive">
-                                        <table className="table table-striped">
+                                        <table className="footable table table-stripped toggle-arrow-tiny default breakpoint footable-loaded">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">Tanggal</th>
+                                                    <th scope="col" className="footable-visible footable-first-column footable-sortable">Tanggal <span className="footable-sort-indicator"></span></th>
                                                     <th scope="col">Jam</th>
                                                     <th scope="col">User</th>
                                                     <th scope="col">Trade Number</th>

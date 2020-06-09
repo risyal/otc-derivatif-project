@@ -38,6 +38,7 @@
     "bootstrap": "^3.3.7",
     "dom-tools": "^0.1.4",
     "font-awesome": "^4.7.0",
+    "footable": "^2.0.6",
     "gh-pages": "^3.0.0",
     "history": "^3.0.0",
     "jquery": "^3.1.1",

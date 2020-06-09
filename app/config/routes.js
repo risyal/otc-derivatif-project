@@ -3,7 +3,6 @@ import Main from '../components/layouts/Main';
 import Blank from '../components/layouts/Blank';
 
 import MainView from '../views/Main';
-// import MinorView from '../views/Minor';
 import AtsView from '../views/AtsPage';
 import TransactionView from '../views/TransactionPage';
 import SettlementSchedule from '../views/SettlementSchedule';
@@ -39,7 +38,7 @@ import { Route, Router, IndexRedirect, browserHistory } from 'react-router';
 export default (
     <Router history={browserHistory}>
         <Route path="/" component={Main}>
-            <IndexRedirect to="/ats" />
+            <IndexRedirect to="/home" />
             {/* <Route path="main" component={MainView}> </Route> */}
             {/* <Route path="minor" component={MinorView}> </Route> */}
             <Route path="ats" component={AtsView}> </Route>
@@ -69,7 +68,9 @@ export default (
             <Route path="manualsttl" component={ManualSetllView}></Route>
             <Route path="productOis" component={ProductOisView}></Route>
             <Route path="productDndf" component={ProductDndfView}></Route>
+           
         </Route>
+        <Route path="home" component={HomeView}></Route>
     </Router>
 
 );
