@@ -1,9 +1,49 @@
 import React, { Component } from 'react';
 import { Link, Location } from 'react-router';
 import HeaderPage from '../components/common/HeaderPage';
+import IRSPage from '../views/AtsIRS';
+import AtsOis from './AtsOis';
+import AtsDndf from './AtsDndf';
 
 class AtsPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            isIrs: false,
+            isOis: false,
+            isDndf: false
+        };
+    }
     render() {
+        const handleSearch = (e) => {
+            console.log(e);
+            if (e == 'irs') {
+                this.setState({
+                    isIrs: true,
+                    isOis: false,
+                    isDndf: false
+                });
+            } else if (e == 'ois') {
+                this.setState({
+                    isIrs: false,
+                    isOis: true,
+                    isDndf: false
+                });
+            } else if (e == 'dndf') {
+                this.setState({
+                    isIrs: false,
+                    isOis: false,
+                    isDndf: true
+                });
+            } else {
+                this.setState({
+                    isIrs: false,
+                    isOis: false,
+                    isDndf: false
+                });
+            }
+
+        };
         return (
             <div>
                 <HeaderPage
@@ -16,7 +56,7 @@ class AtsPage extends Component {
                         <div className="col-lg-12">
                             <div className="ibox ">
                                 <div className="ibox-title">
-                                    <form >
+                                    {/*  <form >
                                         <div className="form-group col-md-5 ">
                                             <div className="form-group row">
                                                 <div className="form-group col-md-3">
@@ -33,9 +73,6 @@ class AtsPage extends Component {
                                                     <label for="inputUser2">Product</label>
 
                                                 </div>
-                                                {/* <div className="col-sm-1">
-                                                <label for="inputProduct"> : </label>
-                                            </div> */}
                                                 <div className="col-sm-5">
                                                     <select id="inputState" className="form-control" title="Pilih Salah satu Product Dibawah ini">
                                                         <option selected>...</option>
@@ -53,10 +90,6 @@ class AtsPage extends Component {
                                                 <div className="form-group col-md-3">
                                                     <label for="inputConterPart">Counterpart</label>
                                                 </div>
-
-                                                {/* <div className="col-sm-1">
-                                                    <label for="inputConterPart"> : </label>
-                                                </div> */}
 
                                                 <div className="col-sm-5">
                                                     <select id="inputState" className="form-control">
@@ -78,69 +111,66 @@ class AtsPage extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                    </form>
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
-                                    <br />
+                                    </form> */}
 
                                 </div>
                                 <div className="ibox-content">
-                                    <div className="table-responsive">
+                                    <div className="form-group row">
+                                        <label className="col-lg-3 col-form-label">User </label>
 
-                                        <table className="table  table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th scope="col">Parameters</th>
-                                                    <th scope="col">Definition</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
+                                        <div className="col-lg-5">
+                                            <input type="input" placeholder="" className="form-control" />
 
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-                                                <tr>
-                                                    <td></td>
-                                                    <td></td>
-                                                </tr>
-
-                                            </tbody>
-                                        </table>
-                                        <button type="button" className="btn btn-primary btn-submit" >
-                                            <span >
-
-                                                Process
-                                            </span>
-
-
-                                        </button>
-
+                                        </div>
                                     </div>
+                                    <div className="form-group row">
+                                        <label className="col-lg-3 col-form-label">Product </label>
+
+                                        <div className="col-lg-5">
+                                            <select id="inputState" className="form-control"
+                                                onChange={(e) => handleSearch(e.target.value)}>
+                                                <option selected>Pilih Product </option>
+                                                <option value="irs">IRS </option>
+                                                <option value="ois">OIS </option>
+                                                <option value="dndf">DNDF </option>
+                                            </select>
+
+                                        </div>
+                                    </div>
+                                    <div className="form-group row">
+                                        <label className="col-lg-3 col-form-label">Counterpart </label>
+
+                                        <div className="col-lg-5">
+                                            <input type="input" placeholder="" className="form-control" />
+
+                                        </div>
+                                    </div>
+                                    <div className="form-group row">
+                                        <label className="col-lg-3 col-form-label">Client / Member </label>
+
+                                        <div className="col-lg-5">
+                                            <input type="input" placeholder="" className="form-control" />
+
+                                        </div>
+                                    </div>
+                                    {this.state.isIrs ?
+                                        <IRSPage></IRSPage>
+                                        : this.state.isOis ?
+                                            <AtsOis></AtsOis>
+                                            : this.state.isDndf ?
+                                                <AtsDndf></AtsDndf>
+                                                : <div><span>Pilih Product</span></div>
+                                    }
+
+                                    <button type="button" className="btn btn-primary btn-submit" >
+                                        <span >
+
+                                            Process
+                            </span>
+
+
+                                    </button>
+
                                 </div>
                             </div>
                         </div>
