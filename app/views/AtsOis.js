@@ -25,11 +25,15 @@ export default function AtsOis() {
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Currency </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="idr">IDR </option>
                         <option value="usd">USD </option>
                     </select>
+                </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
                 </div>
             </div>
 

@@ -16,41 +16,57 @@ export default function AtsDndf() {
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Currency </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="idr">IDR </option>
                         <option value="usd">USD </option>
                     </select>
                 </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
+                </div>
             </div>
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Currency Pair </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="USD">USD </option>
                         <option value="IDR">IDR </option>
                     </select>
+                </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
                 </div>
             </div>
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Forward Rate </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="IDR">IDR </option>
                         <option value="USD">USD </option>
                     </select>
                 </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
+                </div>
             </div>
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Notional Foreign Currency </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="USD">USD </option>
                         <option value="IDR">IDR </option>
                     </select>
+                </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
                 </div>
             </div>
             <div className="form-group row">
@@ -76,11 +92,15 @@ export default function AtsDndf() {
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Forward Point/Spread </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="IDR">IDR </option>
                         <option value="USD">USD </option>
                     </select>
+                </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
                 </div>
             </div>
             <div className="form-group row">
@@ -111,11 +131,15 @@ export default function AtsDndf() {
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Settlement Currency </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="IDR">IDR </option>
                         <option value="USD">USD </option>
                     </select>
+                </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
                 </div>
             </div>
             <div className="form-group row">
@@ -150,11 +174,15 @@ export default function AtsDndf() {
             <div className="form-group row">
                 <label className="col-lg-3 col-form-label">Notional Amount </label>
 
-                <div className="col-lg-5">
+                <div className="col-lg-2">
                     <select id="inputState" className="form-control">
                         <option value="IDR">IDR </option>
                         <option value="USD">USD </option>
                     </select>
+                </div>
+                <div className="col-lg-3">
+                    <input type="input" placeholder=" " className="form-control" />
+
                 </div>
             </div>
         </div >
