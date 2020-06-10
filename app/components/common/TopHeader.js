@@ -23,9 +23,8 @@ class TopHeader extends React.Component {
                             <div className="titlePage col-sm-7">
                                 <p>CCP OTC - KPEI</p>
                             </div>
-
-
-                            <ul className="nav navbar-top-links navbar-right navMenuUser col-sm-2.5 ">
+                            
+                            <ul className="nav navbar-top-links navbar-right navMenuUser col-sm-3 ">
                                 <li className="rounded">
                                     <a data-toggle="dropdown" className="dropdown-toggle" href="#">
                                         <span className="text-muted text-xs block">

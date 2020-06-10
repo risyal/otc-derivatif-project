@@ -8621,7 +8621,7 @@ body.md-skin {
   height: 80px;
   padding: 33px 25px;
   background-image: url("patterns/site-logo.png");  
-  background-size: 100px 65px;
+  background-size: 95px 65px;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #fff;
@@ -8649,7 +8649,7 @@ body.mini-navbar .logo-element {
   padding-top: 30px;
 }
 .mini-navbar .nav .nav-second-level{
-  background-color: #7cb518;  
+  background-color: #4b9709;  
 }
 .body.mini-navbar .nav-header {
   background-color: #fff !important; 
@@ -8661,6 +8661,8 @@ body.mini-navbar .logo-element {
   text-align: center;
   padding-top: 5px;
   color: black;
+  margin-left: 45px;
+  width: 55%;
 }
 .navbar-fixed-top .navbar-form-custom .form-control { height: 50px}
 .navbar-fixed-top,
@@ -8668,7 +8670,10 @@ body.mini-navbar .logo-element {
   background: linear-gradient(to left,#7cbb46,#7cbb46,#fff) !important; 
 }
 .navbar-right {
-  margin-right: 15px;
+  margin-right: -90px; /*ini*/
+}
+.mini-navbar .navbar-right {
+  margin-right: -125px;
 }
 
 /* button */

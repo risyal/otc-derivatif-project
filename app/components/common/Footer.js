@@ -10,10 +10,6 @@ class Footer extends React.Component {
                 <div>
                     PT Kliring Penjaminan Efek Indonesia
                 </div>
-                   
-
-
-
             </div>
         )
     }

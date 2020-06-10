@@ -34,16 +34,9 @@ class Navigation extends Component {
 
                         <div className="logo-element">
                             KPEI
-                            </div>
+                        </div>
                     </li>
 
-                    <br />
-                    {/* <li className={this.activeRoute("/main")}>
-                        <Link to="/main"><i className="fa fa-home" aria-hidden="true"></i> <span className="nav-label">Home</span></Link>
-                    </li>
-                    <li className={this.activeRoute("/minor")}>
-                        <Link to="/minor"><i className="fa fa-th-large"></i> <span className="nav-label">Minor view</span></Link>
-                    </li> */}
                     <li className={this.activeRoute("/ats")}>
                         <Link to="/">
                             <i className="fa fa-tasks" aria-hidden="true"></i>
@@ -51,49 +44,56 @@ class Navigation extends Component {
                             <span className="fa arrow"></span>
                         </Link>
                         <ul className="nav nav-second-level collapse" aria-expanded="false" >
-                            <li >
+                            <li>
                                 <Link to={{
                                     pathname: '/ats'
-                                }}><i aria-hidden="true"></i> <span className="nav-label">New Trade</span></Link>
+                                }}>
+                                    New Trade
+                                </Link>
                             </li>
                             <li >
                                 <Link to={{
                                     pathname: '/ats/inquiryTrade'
-                                }}><i aria-hidden="true"></i> <span className="nav-label">Inquiry trade</span></Link>
+                                }}>
+                                    Inquiry trade
+                                </Link>
                             </li>
                         </ul>
                     </li>
 
                     <li className={this.activeRoute("/transaction")}>
-                        <Link to="/"><i className="fa fa-money" aria-hidden="true"></i> <span className="nav-label">Transaction</span><span className="fa arrow"></span></Link>
+                        <Link to="/">
+                            <i className="fa fa-money" aria-hidden="true"></i> 
+                            <span className="nav-label">Transaction</span>
+                            <span className="fa arrow"></span>
+                        </Link>
                         <ul className="nav nav-second-level collapse" aria-expanded="false" >
                             <li>
                                 <Link to={{
                                     pathname: '/netPosition'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Net Position</span>
-
+                                }}>
+                                    Net Position
                                 </Link>
                             </li>
                             <li>
                                 <Link to={{
                                     pathname: '/tradeInquiry'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Trade Inquiry</span>
-
+                                }}>
+                                    Trade Inquiry
                                 </Link>
                             </li>
                             <li>
                                 <Link to={{
                                     pathname: '/novationReport'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Novation Report</span>
-
+                                }}>
+                                    Novation Report
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to={{
                                     pathname: '/clearing'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Clearing Calculation</span>
-
+                                }}>
+                                    Clearing Calculation
                                 </Link>
                             </li>
 
@@ -102,35 +102,38 @@ class Navigation extends Component {
                     </li>
 
                     <li className={this.activeRoute("/account")}>
-                        <Link to="/"><i className="fa fa-user-circle" aria-hidden="true"></i> <span className="nav-label">Account</span><span className="fa arrow"></span></Link>
+                        <Link to="/">
+                            <i className="fa fa-user-circle" aria-hidden="true"></i> 
+                            <span className="nav-label">Account</span>
+                            <span className="fa arrow"></span>
+                        </Link>
                         <ul className="nav nav-second-level collapse" aria-expanded="false" >
                             <li>
                                 <Link to={{
                                     pathname: '/accountDetail'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Detail Information</span>
-
+                                }}>
+                                    Detail Information
                                 </Link>
                             </li>
                             <li>
                                 <Link to={{
                                     pathname: '/withdrawall'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Widthrawall</span>
-
+                                }}>
+                                    Widthrawall
                                 </Link>
                             </li>
                             <li>
                                 <Link to={{
                                     pathname: '/movementjrnl'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Movement Journal</span>
-
+                                }}>
+                                    Movement Journal
                                 </Link>
                             </li>
-
                             <li>
                                 <Link to={{
                                     pathname: '/manualsttl'
-                                }}><i aria-hidden="true"></i><span className="nav-label">Manual Settlement</span>
-
+                                }}>
+                                    Manual Settlement
                                 </Link>
                             </li>
 
@@ -138,83 +141,116 @@ class Navigation extends Component {
                     </li>
 
                     <li className={this.activeRoute("/settlement")}>
-                        <Link to="/"><i className="fa fa-list-alt" aria-hidden="true"></i> <span className="nav-label">Settlement</span><span className="fa arrow"></span></Link>
+                        <Link to="/">
+                            <i className="fa fa-list-alt" aria-hidden="true"></i> 
+                            <span className="nav-label">Settlement</span>
+                            <span className="fa arrow"></span>
+                        </Link>
                         <ul className="nav nav-second-level collapse" aria-expanded="false" >
                             <li >
                                 <Link to={{
                                     pathname: '/settlementsch'
-                                }}><i aria-hidden="true"></i> <span className="nav-label">Schedule</span></Link>
+                                }}>
+                                    Schedule
+                                </Link>
                             </li>
                             <li >
                                 <Link to={{
                                     pathname: '/settlementhstr'
-                                }}><i aria-hidden="true"></i> <span className="nav-label">History</span></Link>
+                                }}>
+                                    History
+                                </Link>
                             </li>
                         </ul>
                     </li>
 
                     <li className={this.activeRoute("/Settlement")}>
-                        <Link to="/"><i className="fa fa-flag" aria-hidden="true"></i> <span className="nav-label">Report</span><span className="fa arrow"></span></Link>
+                        <Link to="/">
+                            <i className="fa fa-flag" aria-hidden="true"></i> 
+                            <span className="nav-label">Report</span>
+                            <span className="fa arrow"></span>
+                        </Link>
                         <ul className="nav nav-second-level collapse" aria-expanded="false" >
                             <li >
                                 <Link to={{
                                     pathname: '/reportView',
                                     state: { id: 'Clearing Report' }
-                                }}><i aria-hidden="true"></i> <span className="nav-label">Clearing Report</span></Link>
+                                }}>
+                                    Clearing Report
+                                </Link>
                             </li>
                             <li >
                                 <Link to={{
                                     pathname: '/reportView',
                                     state: { id: 'Daily Transaction' }
-                                }}><i aria-hidden="true"></i> <span className="nav-label">Daily Transaction</span></Link>
+                                }}>
+                                    Daily Transaction
+                                </Link>
                             </li>
                             <li >
                                 <Link to={{
                                     pathname: '/reportView',
                                     state: { id: 'Settlement' }
-                                }}><i aria-hidden="true"></i> <span className="nav-label">Settlement</span></Link>
+                                }}>
+                                    Settlement
+                                </Link>
                             </li>
                         </ul>
                     </li>
 
                     <li className={this.activeRoute("/administration")}>
-                        <Link to="/administration"><i className="fa fa-book" aria-hidden="true"></i> <span className="nav-label">Administration</span><span className="fa arrow"></span></Link>
+                        <Link to="/administration">
+                            <i className="fa fa-book" aria-hidden="true"></i> 
+                            <span className="nav-label">Administration</span>
+                            <span className="fa arrow"></span>
+                        </Link>
                         <ul className="nav nav-second-level collapse" aria-expanded="false" >
-                            <li >
-                                <Link to="/administration/auditTrail" ><i aria-hidden="true"></i> <span className="nav-label">Audit Trail</span></Link>
+                            <li>
+                                <Link to="/administration/auditTrail" >
+                                    Audit Trail
+                                </Link>
                             </li>
-
-                            <li >
-                                <Link to="/administration/userManagement"><i ></i> <span className="nav-label">User Management</span></Link>
+                            <li>
+                                <Link to="/administration/userManagement">
+                                   User Management
+                                </Link>
                             </li>
-
                             <li>
                                 <Link to={{
                                     pathname: '/administration/product',
                                     state: { id: 'IRC' }
-                                }}><i ></i> <span className="nav-label">Product</span></Link>
+                                }}>
+                                    Product
+                                </Link>
                             </li>
-
                             <li>
-                                <Link to="/administration/member"><i ></i> <span className="nav-label">Members</span></Link>
+                                <Link to="/administration/member">
+                                    Members
+                                </Link>
                             </li>
-
                             <li>
-                                <Link to="/administration/client"><i ></i> <span className="nav-label">Clients</span></Link>
+                                <Link to="/administration/client">
+                                    Clients
+                                </Link>
                             </li>
-
                             <li>
-                                <Link to="/administration/System"><i ></i> <span className="nav-label">System Parameter</span></Link>
+                                <Link to="/administration/System">
+                                    System Parameter
+                                </Link>
                             </li>
-
                             <li>
-                                <Link to="/administration/calender"><i ></i> <span className="nav-label">Calender</span></Link>
+                                <Link to="/administration/calender">
+                                    Calender
+                                </Link>
                             </li>
                         </ul>
                     </li>
 
                     <li className={this.activeRoute("/approval")}>
-                        <Link to="/approval"><i className="fa fa-edit" aria-hidden="true"></i> <span className="nav-label">Approval</span></Link>
+                        <Link to="/approval">
+                            <i className="fa fa-edit"></i> 
+                            <span className="nav-label">Approval</span>
+                        </Link>
                     </li>
                 </ul>
 
