@@ -8608,15 +8608,6 @@ body.md-skin {
   background-color: #7cbb46; 
   color: #000 !important; 
 }
-.nav.navbar-right > li > a,
-.nav.navbar-right > li > a > span{
-  color: #000;
-  padding-left: 25px;
-}
-.nav.navbar-right > li > a:hover,
-.nav.navbar-right > li > a > span:hover{
-  background-color: inherit;
-}
 .nav-header {
   height: 80px;
   padding: 33px 25px;
@@ -8669,11 +8660,19 @@ body.mini-navbar .logo-element {
 .navbar-static-top {
   background: linear-gradient(to left,#7cbb46,#7cbb46,#fff) !important; 
 }
+.nav.navbar-right > li > a,
+.nav.navbar-right > li > a > span{
+  color: #000;
+  padding-left: 25px;
+}
 .navbar-right {
   margin-right: -90px; /*ini*/
 }
 .mini-navbar .navbar-right {
   margin-right: -125px;
+}
+.navbar-top-links li:last-child{
+  margin-right: 0px;
 }
 
 /* button */
@@ -8744,6 +8743,60 @@ body {
   padding-left: 0px;
 }
 
+@media screen and (max-width: 770px){
+  .titlePage {
+    display: none !important;
+  }
+  .navbar-right {
+    margin-right: 5px;
+  }
+  .nav.navbar-right > li > a, 
+  .nav.navbar-right > li > a > span {
+    padding-left: 0px;
+  }
+  
+  .mini-navbar .navbar-right {
+    margin-right: -30px;
+  }
+}
+
+@media screen and (max-width: 550px){
+    .titlePage {
+      display: none;
+    }
+    .navbar-right {
+      margin-left: 365px;
+    }
+    .mini-navbar .navbar-right {
+      margin-left: 300px;
+    }
+}
+
+@media screen and (max-width: 375px){
+  .titlePage {
+    display: none;
+  }
+  .navbar-right {
+    margin-left: 210px;
+  }
+  .mini-navbar .navbar-right {
+    margin-left: 140px;
+  }
+  }
+
+@media screen and (max-width: 320px){
+.titlePage {
+  display: none;
+}
+.navbar-right {
+  margin-left: 155px;
+}
+.mini-navbar .navbar-right {
+  margin-left: 85px;
+}
+}
+
+
 /*===================== Home ===================*/
 .container{
   padding: 15px 0px;
@@ -8761,14 +8814,6 @@ body{
   background: url(../img/bg.jpg) center center no-repeat;
   background-size: cover;
   font-family: 'Poppins', sans-serif;
-}
-
-img{
-  width: 150%;
-}
-
-.image{
-  width: 100%;
 }
 
 #one{
@@ -8879,6 +8924,9 @@ img{
     justify-content: center;
     margin-left: 70px;
   }
+  .logo{
+    margin-left: 100px;
+  }
 }
 @media screen and (max-width: 760px){
   #one{
@@ -8887,7 +8935,7 @@ img{
 
   .login-content{
     justify-content: center;
-    margin-left: 55px;
+    margin-left: 65px;
   }
 
   .logo{
@@ -8905,7 +8953,7 @@ img{
 
   .login-content{
     justify-content: center;
-    margin-left: 55px;
+    margin-left: 40px;
   }
 }
 

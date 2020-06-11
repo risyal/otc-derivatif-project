@@ -17,15 +17,15 @@ class TopHeader extends React.Component {
                     <div className="test">
                         <div className="row top-nav">
                             <div className="navbar-header col-sm-2">
-                                <a className=" sideControl navbar-minimalize minimalize-styl-2 btn btn-primary " onClick={this.toggleNavigation} href="#"><i className="fa fa-bars"></i> </a>
+                                <a className="sideControl navbar-minimalize minimalize-styl-2 btn btn-primary " onClick={this.toggleNavigation} href="#"><i className="fa fa-bars"></i> </a>
                             </div>
 
                             <div className="titlePage col-sm-7">
                                 <p>CCP OTC - KPEI</p>
                             </div>
                             
-                            <ul className="nav navbar-top-links navbar-right navMenuUser col-sm-3 ">
-                                <li className="rounded">
+                            <ul className="nav navbar-top-links navbar-right col-sm-3 ">
+                                <li>
                                     <a data-toggle="dropdown" className="dropdown-toggle" href="#">
                                         <span className="text-muted text-xs block">
                                             <i className="fa fa-user-o" aria-hidden="true"></i>
